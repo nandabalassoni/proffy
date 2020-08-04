@@ -1,0 +1,2 @@
+# proffy
+O projeto consiste no desenvolvimento de uma plataforma para aulas remotas. Desenvolvido utilizando React e Typescript, o projeto tem por objetivo fornecer uma plataforma onde professores possam se cadastrar, informar a disciplina que queiram lecionar e a sua hora/aula e os alunos encontram professores para que possam lecionar, ter aulas. Desenvolvido durante o evento "Next Level Week" da Rocketseat
