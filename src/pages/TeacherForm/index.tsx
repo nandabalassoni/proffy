@@ -32,7 +32,6 @@ function TeacherForm(){
                     <Select name="subject" 
                             label="Matéria" 
                             options={[
-                                {value:"Selecione uma matéria", label:"Selecione uma matéria"},
                                 {value:"Artes", label:"Artes"},
                                 {value:"Biologia", label:"Biologia"},
                                 {value:"Sociologia", label:"Sociologia"},
