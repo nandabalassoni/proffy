@@ -6,13 +6,21 @@ import './styles.css';
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> { // aqui importamos todas as propriedades HTML que podemos utilizar dentro do form
     label:string;
     name:string;
+    options: Array<{
+        value:string;
+        label:string;
+    }>;
 }
 
-const Select: React.FunctionComponent<SelectProps> = ({ label, name, ...rest}) => {
+const Select: React.FunctionComponent<SelectProps> = ({ label, name, options, ...rest}) => {
     return(
         <div className="select-block">
             <label htmlFor={name}>{label}</label>
-            <select id={name} {...rest}/>
+            <select id={name} {...rest}>
+                {options.map(option =>{
+                    return <option value={option.value}>{option.label}</option>
+                })} 
+            </select>
         </div>
     );
 }
